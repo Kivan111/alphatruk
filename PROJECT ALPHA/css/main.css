@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*-----Nav-Bar---*/
+
+#nav-bar {
+    position: sticky;
+    top: 0;
+    z-index: 21;
+}
+
+.primary-icon {
+    height: 65px;
+    padding: 8px;
+}
+
+.navbar-nav li {
+    padding: 0 5px;
+}
+
+.navbar-nav li a {
+    display: flex;
+    float: right;
+    text-align: left;
+}
+
+#nav-bar ul li a:hover {
+    color: rgb(233, 18, 18)!important;
+}
+
+.navbar {
+    background: rgb(53, 85, 85);
+}
+
+.navbar-toggler {
+    border: none!important;
+}
+
+.nav-link {
+    color: white!important;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/***Slider***/
+
+
+
+/**About Us**/
+
+#about {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #efefef;
+    background-color: rgb(33, 64, 73);
+}
+
+.about-content {
+    padding-top: 20px;
+    padding-bottom: 25px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.about-sino {
+    padding-top: 20px;
+    padding-bottom: 25px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+/*-----SERVICES-----*/
+
+#services {
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(/img/backg.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #efefef!important;
+    background-attachment: fixed;
+    padding-top: 50px;
+    padding-bottom: 50px;   
+    
+}
+
+#services h1 {
+    text-align: center;
+    color: #efefef!important;
+    padding-bottom: 10px;
+}
+
+#services h1::after {
+    content: "";
+    background: #efefef;
+    display: block;
+    height: 3px;
+    width: 150px;
+    margin: 20px auto 5px;
+}
+
+.services {
+    margin-top: 50px;
+}
+
+.icon {
+    font-size: 40px;
+    margin: 20px auto;
+    padding: 7px;
+    height: 80px;
+    width: 80px;
+    border: 1px solid #efefef;
+    border-radius: 50%;
+}
+
+#services p {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #ccc;
+}
+
+.services .col-md-3:hover {
+    background: rgb(53, 85, 85);
+    cursor: pointer;
+    transition: 0.7s;
+}   
+
+
+/***Footer***/
+
+footer {
+    position: flex;
+    bottom: 0;
+    width: 100%;
+    color: #d9d9d9;
+    background: rgb(42, 65, 68);   
+    font-family: sans-serif;
+}   
+
+.main-content {
+    display: flex;
+}
+
+.main-content .box {
+    flex-basis: 50%;
+    padding: 10px 20px;
+    
+}
+
+.box h2 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.box .content {
+    margin: 20px 0 0 0;
+    position: relative;
+}
+
+.box .content::before {
+    position: absolute;
+    content: '';
+    top: -10px;
+    height: 2px;
+    width: 100%;
+    background: #1a1a1a;
+}
+
+.box .content::after {
+    position: absolute;
+    content: '';
+    top: -10px;
+    height: 2px;
+    width: 15%;
+    background: #f12020;
+}
+
+.leftt .content p {
+    text-align: justify;
+}
+
+.left .content .social {
+    margin: 20px 0 0 0;
+}
+
+.left .content .social a {
+    padding: 0 2px;
+}
+
+.left .content .social a span {
+    height: 40px;
+    width: 40px;
+    background: #151515;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    color: #ccc;
+    border-radius: 5px;
+    transition: .3s;
+    font-size: 22px;
+}
+
+.left .content .social a span:hover {
+    background: #f12020;
+
+}
+
+.center .content .fas {
+    font-size: 1.4375rem;
+    background: #1a1a1a;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.center .content .fas:hover {
+    background: #f12020;
+}
+
+.center .content .text {
+    font-size: 1.0625;
+    font-weight: 500;
+    padding-left: 10px;
+}
+
+.center .content .phone {
+    margin: 10px 0;
+}
+
+.right form .text {
+    font-size: 1.0625rem;
+    margin-bottom: 2px;
+    color: white;
+}
+
+.right form .msg {
+    margin-top: 10px;
+}
+
+.right form input, .right form textarea {
+    width: 100%;
+    font-size: 1.0625rem;
+    background: #ccc;
+    padding-left: 10px;
+    border: 1px solid #222222;
+
+}
+
+.right form input:focus
+.right form textarea:focus{
+    outline-color: 3498dv;
+}
+
+.right form input {
+    height: 35px;
+}
+
+.right form .btn {
+    margin-top: 10px;
+}
+
+.right form .btn button {
+    height: 40px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: rgb(191, 192, 192);
+    font-size: 1.0625rem;
+    font-weight: 500;
+    cursor: pointer;
+    transform: .3s;
+
+}
+
+.right form .btn button:hover {
+    background: #ccc;
+}
+
+/****Copyright****/
+
+.bottom center {
+    padding: 5px;
+    font-size: 0.9375rem;
+    background: rgb(8, 13, 14);
+}
+
+.bottom center span {
+    color: white;
+}
+
+/***More Adjustment's***/
+
+@media screen and (max-width: 900px) {
+    footer {
+        position: relative;
+        bottom: 0px;
+    }
+    .main-content {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .main-content .box {
+        margin: 5px 0;
+    }
+}
